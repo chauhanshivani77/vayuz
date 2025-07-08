@@ -1,0 +1,79 @@
+.sidebar {
+  width: 250px;
+  background-color: black;
+  color: white;
+  padding: 20px 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #131313;
+  .logo {
+    width: 130px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-btn-wrapper {
+    display: inline-block;
+    padding: 1px; /* Thickness of the border */
+    border-radius: 23px; /* Radius for outer border */
+    background: conic-gradient(
+      from 90deg at 50% 50%,
+      #07a7cd 0deg,
+      #fc0600 62.37deg,
+      #09d809 173.97deg,
+      #ff6600 255.65deg,
+      #f60163 290.5deg,
+      #07a7cd 360deg
+    );
+    .contact-button {
+     background-color: #131313; 
+      color: white;
+      padding: 12px 1.7rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 24px; /* Match inner radius to wrapper minus padding */
+      cursor: pointer;
+      display: inline-block;
+    }
+  }
+}
+
+/* responsive */
+
+@media (max-width: 576px) {
+  .sidebar {
+    padding: 1rem 0.5rem;
+  }
+
+  .logo {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .contact-button {
+    font-size: 12px !important;
+    padding: 6px 12px;
+    margin: 0 auto;
+  }
+
+  .MuiListItem-root {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .MuiListItemText-primary {
+    font-size: 14px !important;
+    text-align: center;
+  }
+
+  .MuiDrawer-paper {
+    padding-top: 56px; /* Ensure content appears below AppBar */
+  }
+
+  .MuiToolbar-root {
+    min-height: 56px !important; /* AppBar height for mobile */
+  }
+}
+

@@ -1,0 +1,335 @@
+.main-page h1 {
+    font-size: 43px;
+    line-height: 120%;
+    font-weight: 500;
+    font-family: "Playfair Display", serif;
+}
+
+.main-page {
+    .first-section {
+        .header {
+            padding: 2px 0;
+            border-bottom: 1px solid #ffffffcc;
+            .subtitle {
+                color: white;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+        }
+        .left-side {
+            margin-top: 6rem;
+
+            .upgrade-btn {
+                font-weight: 700;
+                padding: 12px 2rem;
+                background-color: #08a7ce;
+                border-radius: 2rem;
+                font-size: 1rem;
+                color: #ffffff;
+                margin-top: 2rem;
+            }
+        }
+        .right-side {
+            position: relative;
+            margin-top: 2rem;
+            background-image: url("background-image.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+
+            .right-bg {
+                position: absolute;
+                bottom: 0rem;
+                right: -2rem;
+                z-index: 0;
+                overflow: hidden;
+                .bg-image {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .rectangle-3 {
+                position: relative;
+                width: 507px;
+                height: 372px;
+                align-items: start;
+                z-index: 1;
+            }
+            .rectangle-2 {
+                position: relative;
+                left: 13.2rem;
+                bottom: 4rem;
+                z-index: 1;
+            }
+            .rectangle-1 {
+                position: relative;
+                bottom: 13.5rem;
+                right: -1rem;
+                z-index: 1;
+            }
+            /* .right-bg {
+            .bg-image {
+                width: 100%;
+                position: absolute;
+                right: 5rem;
+                bottom: 0rem;
+                height: 100%;
+                object-fit: cover;
+                opacity: 0.9;
+                filter: brightness(0.8) blur(0.2px);
+            }
+        } */
+        }
+    }
+    .second-section {
+        .flutter-left {
+            h1 {
+                line-height: 95%;
+            }
+        }
+        .flutter-middle {
+            p {
+                font-family: "Quicksand", sans-serif;
+                font-size: 1rem;
+                line-height: 160%;
+                color: #ffffffcc;
+                font-weight: 600;
+            }
+        }
+        .flutter-right {
+            position: relative;
+            button {
+                padding: 11px 1.8rem;
+                border-radius: 1.5rem;
+                font-size: 1rem;
+                font-weight: 700;
+                background-color: #08a7ce;
+                position: absolute;
+                top: 6.5rem;
+                right: -1rem;
+            }
+        }
+    }
+    .third-section {
+        /* margin-top: 8rem;
+        padding-top: 8rem; */
+        text-align: center;
+        .upper-head {
+            .sub-head {
+                font-size: 22px;
+                color: #ffffffcc;
+            }
+            p {
+                font-size: 14px;
+                color: #ffffffcc;
+            }
+        }
+        .lower-head {
+            color: #ffffffcc;
+            .css-bnzgif-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+                margin: 0 !important;
+            }
+            .css-yfrx4k-MuiAccordionSummary-content.Mui-expanded {
+                margin: 10px 0 !important;
+            }
+        }
+    }
+}
+
+/* Responsive starts from here */
+
+/* @media only screen and (max-width: 576px) {
+  .main-page .first-section .header {
+    padding: 0;
+    font-size: 10px !important;
+    margin-bottom: 10px;
+    color: red !important;
+  }
+
+  .main-page .first-section .left-side {
+    margin-top: 2rem;
+  }
+
+  .main-page .first-section .left-side .upgrade-btn {
+    font-size: 12px;
+  }
+
+  .main-page .first-section .right-side .rectangle-1 {
+    bottom: 20.5rem;
+    left: 17rem;
+  } */
+
+  /* .main-page .second-section .flutter-left h1 br {
+    display: none;
+  }
+
+  .main-page .second-section .flutter-right button {
+    top: 1rem;
+    right: 13rem;
+  }
+
+  .main-page .third-section {
+    padding-top: 5rem !important;
+  }
+
+  .main-page .third-section .upper-head p br {
+    display: none;
+  }
+} */
+
+@media (max-width: 576px) {
+  
+
+  .css-1ygil4i-MuiToolbar-root{
+    padding: 0 !important;
+  }
+
+  .first-section .header .subtitle {
+    font-size: 9px !important;
+    text-align: center;
+  }
+
+  .left-side{
+    margin-top: 2rem !important;
+  }
+  .left-side h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .left-side h5 {
+    font-size: 9px;
+    text-align: center;
+  }
+
+  .upgrade-btn {
+    font-size: 8px !important;
+    padding: 6px 12px !important;
+    display: block;
+    text-align: center;
+    margin:1rem 4rem!important;
+  }
+
+  .rectangle-3{
+    width: 400px !important;
+    height: 200px !important;
+  }
+  .rectangle-2{
+    left: 2.9rem !important;
+    bottom: 3rem !important;
+  }
+              .rectangle-1 {
+                bottom: 15.5rem !important;
+                right: -5rem !important;
+            }
+
+  .right-side {
+    position: relative;
+    
+  }
+
+  .first-section{
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .second-section .flutter-left{
+    margin-top: 0  !important;
+  }
+   .second-section .flutter-left h1 br{
+    display: none !important;
+   }
+   .second-section .flutter-middle p{
+    font-size: 12px !important;
+   }
+.second-section .flutter-right button{
+     top: -1.5rem !important;
+     right: 3rem !important;
+
+}
+.second-section .flutter-right button svg{
+    font-size: 1rem !important;
+}
+
+.third-section .upper-head .sub-head{
+    font-size: 12px !important;
+}
+
+  .right-side img {
+    width: 80%;
+    max-width: 250px;
+    margin: 0.5rem auto;
+  }
+
+  .second-section .flutter-left h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .second-section .flutter-left p {
+    text-align: center;
+  }
+
+  .flutter-middle p {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .flutter-right {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .third-section .upper-head h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .third-section .upper-head p {
+    font-size: 8px !important;
+    text-align: center;
+   
+  }
+  .third-section .upper-head p br{
+    display: none;
+  }
+
+  .third-section .css-1a8xai3-MuiTypography-root{
+    font-size: 18px !important;
+  }
+  .third-section .css-104wzxm-MuiTypography-root{
+    font-size: 9px !important;
+  }
+  .third-section .css-pfexg0-MuiTypography-root{
+    font-size: 1.5rem !important;
+  }
+
+  .third-section .lower-head .dynamic-img-sec {
+    text-align: center;
+    margin-top: 0rem !important;
+  }
+
+  .dynamic-img-sec img.dynamic {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .third-section .lower-head .col-md-7 {
+    width: 100%;
+  }
+
+  .third-section .lower-head .col-md-5 {
+    width: 100%;
+  }
+
+  .MuiAccordionDetails-root {
+    width: 100% !important;
+  }
+
+  .MuiTypography-root {
+    font-size: 14px;
+  }
+}
+
+
