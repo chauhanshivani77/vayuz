@@ -58,10 +58,10 @@ const MainPage = () => {
 
   return (
     <div style={{ display: "flex" }}>
-      <Sidebar /> {/* ✅ Drawer on the left side */}
+      <Sidebar />
       <div className="main-page" style={{ flexGrow: 1 }}>
-        <div className="container">
-          <section className="first-section mb-lg-5 mb-md-5">
+        <div className="container px-0">
+          <section className="first-section mb-lg-5 mb-md-5 px-4">
             <div className="header">
               <p className="subtitle">
                 Securing Your Flutter App: Best Practices and Techniques
@@ -74,11 +74,15 @@ const MainPage = () => {
                     Unlock the Potential <br />
                     of Flutter
                   </h1>
-                  <h5>
+                  <p style={{ fontWeight: 400, fontSize: "20px" }}>
                     Your Premier Partner for Cross-Platform <br /> App
                     Excellence!
-                  </h5>
-                  <Button variant="contained" className="upgrade-btn">
+                  </p>
+                  <Button
+                    variant="contained"
+                    className="upgrade-btn"
+                    style={{ fontWeight: "500" }}
+                  >
                     UPGRADE YOUR TECH
                   </Button>
                 </div>
@@ -111,10 +115,11 @@ const MainPage = () => {
               </div>
             </div>
           </section>
-          <section className="second-section pb-3">
+
+          <section className="second-section pb-3 px-4">
             <div className="row">
               <div className="col-md-3 pe-0">
-                <div className="flutter-left my-4">
+                <div className="flutter-left">
                   <h1>
                     Flutter's <br /> Dawn
                   </h1>
@@ -139,10 +144,14 @@ const MainPage = () => {
               <div className="col-md-1"></div>
               <div className="col-md-2">
                 <div className="flutter-right">
-                  <Button variant="contained" className="upgrade-btn">
+                  <Button
+                    variant="contained"
+                    className="upgrade-btn "
+                    style={{ marginTop: "-1.5rem", fontWeight: "500" }}
+                  >
                     Begin
                     <GoArrowUpRight
-                      style={{ fontSize: "1.8rem", marginLeft: "10px" }}
+                      style={{ fontSize: "1.5rem", marginLeft: "10px" }}
                     />
                   </Button>
                 </div>
@@ -150,7 +159,7 @@ const MainPage = () => {
             </div>
           </section>
 
-          <section className="third-section mt-5 pt-5">
+          <section className="third-section mt-5 pt-5 px-4">
             <div className="upper-head">
               <h1 className="mb-0">Our Dynamic Services Suite!</h1>
               <p className="sub-head mt-0">
@@ -163,7 +172,7 @@ const MainPage = () => {
               </p>
             </div>
             <div className="lower-head mt-4">
-              <div className="row">
+              <div className="row d-flex align-items-center">
                 <div className="col-md-7 px-0">
                   <div>
                     {[

@@ -40,14 +40,20 @@ const Sidebar = () => {
 
       {/* Navigation Links */}
       <List className="flex-grow-1">
-        {["App Development", "Challenges", "Hire Developer", "Community"].map((text, index) => (
-          <ListItem button key={index} onClick={() => isMobile && handleDrawerToggle()}>
-            <ListItemText
-              primary={text}
-              primaryTypographyProps={{ style: { fontSize: "15px" } }}
-            />
-          </ListItem>
-        ))}
+        {["App Development", "Challenges", "Hire Developer", "Community"].map(
+          (text, index) => (
+            <ListItem
+              button
+              key={index}
+              onClick={() => isMobile && handleDrawerToggle()}
+            >
+              <ListItemText
+                primary={text}
+                primaryTypographyProps={{ style: { fontSize: "15px" } }}
+              />
+            </ListItem>
+          )
+        )}
       </List>
     </div>
   );
@@ -91,16 +97,15 @@ const Sidebar = () => {
           "& .MuiDrawer-paper": {
             width: drawerWidth,
             boxSizing: "border-box",
-            borderRight: "1px solid #ddd",
+            borderRight: "1px solid #4c4a4acc",
             height: "100vh",
-            overflow: "hidden", // 
+            overflow: "hidden", //
           },
         }}
       >
         {drawerContent}
       </Drawer>
 
-     
       {isMobile && <Toolbar />}
     </>
   );
