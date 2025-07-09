@@ -180,7 +180,7 @@
 } */
 
 @media (max-width: 576px) {
-  
+ 
 
   .css-1ygil4i-MuiToolbar-root{
     padding: 0 !important;
@@ -315,21 +315,14 @@
     max-width: 280px;
   }
 
-  .third-section .lower-head .col-md-7 {
-    width: 100%;
-  }
-
-  .third-section .lower-head .col-md-5 {
-    width: 100%;
-  }
-
-  .MuiAccordionDetails-root {
+  
+  /* .MuiAccordionDetails-root {
     width: 100% !important;
   }
 
   .MuiTypography-root {
     font-size: 14px;
-  }
+  } */
 }
 
 
